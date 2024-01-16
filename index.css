@@ -9,7 +9,7 @@ header{
 }
 
 body{
-  background-color: #1389c5;
+  background-color: #F6F8F9;
 }
 
 .button {
@@ -17,7 +17,7 @@ body{
   border: 1px solid #dcdcdc;           
   border-radius: 5px;                     
   font-size: 16px;                        
-  cursor: pointer;                       
+  cursor: pointer;                     
 }
 
 .add-task{
@@ -35,20 +35,75 @@ body{
 width: 900px;
 height: 80px;
 align-self: center;
-background-color: #333;
+background-color: white;
 text-align: center;
 border-radius: 10px;
 padding-left: 20px;
 margin: 50px auto;
+margin-bottom: 5x;
 }
 
 #big-box{
   width: 900px;
   height: auto;
   align-self: center;
-  background-color: #333;
+  background-color: white;
   text-align: center;
   border-radius: 10px;
   padding-left: 20px;
   margin: 50px auto;  
+  margin-top: -10px;
+}
+
+.editorial{
+color: white;
+background-color: #45ABEA;
+border-radius: 5px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.q1{
+
+}
+
+.Recruiting{
+
+}
+
+.Mobile{
+
+}
+
+.Website{
+
+}
+
+.Sales{
+
+}
+
+.lista-compiti {
+  list-style: none; /* Rimuove i bullet points predefiniti */
+  padding-left: 0; /* Rimuove il padding di default */
+  text-align: left;
+}
+
+.lista-compiti li {
+  padding-left: 25px; /* Dà spazio per i simboli */
+  margin-bottom: 5px; /* Spazio tra le voci della lista */
+  position: relative; /* Permette il posizionamento assoluto dei simboli */
+}
+
+.lista-compiti li.completata::before {
+  content: '\2714'; /* Unicode per il simbolo di spunta */
+  position: absolute;
+  left: 0;
+  color: green; /* Colore della spunta per le attività completate */
+}
+
+.lista-compiti li.incompleta::before {
+  content: '\2716'; /* Unicode per il simbolo X */
+  position: absolute;
+  left: 0;
+  color: red; /* Colore della X per le attività in sospeso */
 }

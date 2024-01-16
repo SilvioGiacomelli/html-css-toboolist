@@ -4,25 +4,44 @@
   box-sizing: border-box;
 }
 
-header{
-  background-color: white;
-}
-
-h1{
-
-}
-
 body{
   background-color: #F6F8F9;
   font-family: 'Ubuntu', sans-serif;
 }
 
+header{
+  background-color: white;
+}
+
+.intestazione{
+  height: 80px;
+  margin-bottom: 7px;
+}
+
+header img{
+  vertical-align: middle;
+  margin-left: 33px;
+}
+
+h1{
+  display: inline-block;
+  margin-top: 4px;
+  line-height: 80px;
+}
+
 .button {
-  padding: 10px 20px;                     
+  padding: 10px 20px;              
   border: 1px solid #dcdcdc;           
   border-radius: 5px;                     
   font-size: 16px;                        
-  cursor: pointer;                     
+  cursor: pointer;    
+  left: 20px;                
+}
+
+.button-container{
+  position: relative;
+  left: 20px;
+  padding-right: 600px;
 }
 
 .add-task{
@@ -30,7 +49,6 @@ body{
   color: white;                         
 }
 
-                                        
 .add-section{
   background-color: #f8f9fa;            
   color: #333;                         
@@ -44,7 +62,7 @@ background-color: white;
 text-align: center;
 border-radius: 10px;
 padding-left: 20px;
-margin: 50px auto;
+margin: 50px auto 15px;
 margin-bottom: 5x;
 }
 
@@ -56,7 +74,7 @@ margin-bottom: 5x;
   text-align: center;
   border-radius: 10px;
   padding-left: 20px;
-  margin: 50px auto;  
+  margin: 50px auto 0px;  
   margin-top: -10px;
   font-family: ;
 }

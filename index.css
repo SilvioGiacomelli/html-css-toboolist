@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+}
+
+body {
+  background-color: #F6F8F9;
+}
+
+.button {
+  padding: 10px 20px; /* Aggiunge spazio intorno al testo all'interno del bottone */
+  border: 1px solid #dcdcdc; /* Aggiunge un bordo con il colore specificato */
+  border-radius: 5px; /* Arrotonda gli angoli del bottone */
+  font-size: 16px; /* Imposta la dimensione del testo */
+  cursor: pointer; /* Cambia il cursore in una mano quando si passa sopra il bottone */
+  outline: none; /* Rimuove l'outline quando il bottone è focalizzato */
+  transition: background-color 0.3s ease; /* Aggiunge un'animazione quando il colore di sfondo cambia */
+  margin-right: 5px; /* Aggiunge margine a destra del bottone */
+}
+
+/* Stile specifico per il bottone "Add Task" */
+.add-task {
+  background-color: #007bff; /* Colore di sfondo blu */
+  color: white; /* Colore del testo bianco */
+}
+
+/* Stile specifico per il bottone "Add Section" */
+.add-section {
+  background-color: #f8f9fa; /* Colore di sfondo grigio chiaro */
+  color: #333; /* Colore del testo grigio scuro */
+}

@@ -14,7 +14,8 @@ header{
 }
 
 .intestazione{
-  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-bottom: 7px;
 }
 
@@ -25,8 +26,7 @@ header img{
 
 h1{
   display: inline-block;
-  margin-top: 4px;
-  line-height: 80px;
+  vertical-align: middle;
 }
 
 .button {
@@ -56,13 +56,14 @@ h1{
 
 #mini-box{
 width: 900px;
-height: 80px;
 align-self: center;
 background-color: white;
 border-radius: 10px 10px 0 0;
 padding-left: 20px;
-margin: 50px auto 15px;
-margin-bottom: 5x;
+margin: 50px auto 5px;
+padding-bottom: 20px;
+padding-top: 20px;
+border-bottom: 5px;
 }
 
 #big-box{
@@ -73,9 +74,7 @@ margin-bottom: 5x;
   text-align: center;
   border-radius: 0 0 10px 10px;
   padding-left: 20px;
-  margin: 50px auto 0px;  
-  margin-top: -10px;
-  font-family: ;
+  margin: 5px auto 0px;  
 }
 
 .editorial{
@@ -126,10 +125,16 @@ font-size: 0.75em;
   font-size: 0.75em;
 }
 
+h3{
+  text-align: left;
+}
+
 .lista-compiti {
   list-style: none; /* Rimuove i bullet points predefiniti */
   padding-left: 0; /* Rimuove il padding di default */
   text-align: left;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .lista-compiti li {
@@ -143,21 +148,6 @@ font-size: 0.75em;
   position: absolute;
   left: 0;
   color: green; /* Colore della spunta per le attività completate */
-}
-
-.lista-compiti li.incompleta::before {
-  content: '\2716'; /* Unicode per il simbolo X */
-  position: absolute;
-  left: 0;
-  color: red; /* Colore della X per le attività in sospeso */
-}
-
-.completata::before{
-  
-
-}
-
-.circle{
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -165,5 +155,18 @@ font-size: 0.75em;
   border-radius: 50%;
   text-align: center;
   line-height: 15px;
+}
 
+.lista-compiti li.incompleta::before {
+  content: '\2716'; /* Unicode per il simbolo X */
+  position: absolute;
+  left: 0;
+  color: red; /* Colore della X per le attività in sospeso */
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
 }
